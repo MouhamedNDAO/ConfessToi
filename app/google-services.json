@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "257934440548",
+    "project_id": "confesse-toi",
+    "storage_bucket": "confesse-toi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:257934440548:android:e71965d7d5f6f352cf8771",
+        "android_client_info": {
+          "package_name": "com.example.confesstoi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAidoTyIfdqut-_kC7tNHFDHXDUhpHITzY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

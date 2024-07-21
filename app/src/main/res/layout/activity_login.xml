@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@color/font1_color"
+    android:padding="20dp">
+ <!-- Revoir la mise en page de tout les pages XML -->
+    <ImageView
+        android:id="@+id/img_logo_app"
+        android:layout_width="177dp"
+        android:layout_height="145dp"
+        android:contentDescription="@string/logo_app"
+        android:src="@drawable/img"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="93dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/confess_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="176dp"
+        android:fontFamily="serif-monospace"
+        android:text="@string/confesse_toi"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/login_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="256dp"
+        android:fontFamily="serif-monospace"
+        android:text="@string/connection"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="55sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="name"
+        android:drawableStart="@drawable/user_account"
+        android:hint="@string/pseudo"
+        android:inputType="text"
+        android:textColorHint="@color/gray"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="364dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/mdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="password"
+        android:drawableStart="@drawable/user_lock"
+        android:hint="@string/mot_de_passe"
+        android:inputType="textPassword"
+        android:textColorHint="@color/gray"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="441dp" />
+
+    <Button
+        android:id="@+id/inscrire"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_blue"
+        android:text="@string/inscrire"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="625dp"
+        />
+    <Button
+        android:id="@+id/connecter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_blue"
+        android:text="@string/connecter"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="549dp"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
