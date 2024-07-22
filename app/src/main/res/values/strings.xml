@@ -56,4 +56,7 @@
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
     <string name="publier">Publier</string>
+    <string name="ecrivez_ici">Ecrivez Ici</string>
+    <string name="desc">Ici tot ce que vous diriez
+        seras publier de facon annonyme</string>
 </resources>
