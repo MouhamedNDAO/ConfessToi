@@ -9,6 +9,10 @@
     tools:context=".AccueilActivity">
 
   <include layout="@layout/content_profil" />
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/vue"/>
   <!-- Revoir la mise en page de tout les pages XML avec l'emulateur-->
   <!-- Surchager la page avec les donnees stockes dans la base de donnees dans des boxes-->
 

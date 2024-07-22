@@ -9,11 +9,24 @@
 
     <include layout="@layout/content_profil" />
     <!-- Revoir la mise en page de tout les pages XML avec l'emulateur-->
+
+    <TextView
+        android:layout_width="599dp"
+        android:layout_height="1110dp"
+        android:text="@string/desc"
+        android:textSize="23dp"
+        app:layout_constraintBaseline_toTopOf="@id/champs"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="140dp"
+        tools:ignore="MissingConstraints" />
+
     <EditText
         android:id="@+id/champs"
         android:layout_width="410sp"
         android:layout_height="300dp"
         android:background="@color/gray"
+        android:hint="@string/ecrivez_ici"
+        android:inputType="text"
         android:paddingTop="67sp"
         tools:ignore="Autofill,MissingConstraints"
         tools:layout_editor_absoluteX="0dp"
