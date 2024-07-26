@@ -14,17 +14,18 @@
         android:id="@+id/img_logo_app"
         android:layout_width="176dp"
         android:layout_height="105dp"
+        android:layout_marginTop="8dp"
         android:contentDescription="@string/logo_app"
         android:src="@drawable/img"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="93dp"
-        tools:layout_editor_absoluteY="16dp" />
+        tools:layout_editor_absoluteX="100dp" />
 
     <TextView
         android:id="@+id/confess_txt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="132dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="serif-monospace"
         android:text="@string/confesse_toi"
         android:textAlignment="center"
@@ -34,13 +35,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/img_logo_app" />
 
     <TextView
         android:id="@+id/login_txt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="188dp"
+        android:layout_marginTop="50dp"
         android:fontFamily="serif-monospace"
         android:text="@string/inscription"
         android:textAlignment="center"
@@ -50,83 +51,89 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/confess_txt" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/user"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
         android:autofillHints="name"
         android:drawableStart="@drawable/user_account"
         android:hint="@string/pseudo"
         android:inputType="text"
         android:textColorHint="@color/gray"
+        app:layout_constraintTop_toBottomOf="@+id/login_txt"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="269dp" />
+        tools:layout_editor_absoluteX="24dp" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/mdp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
         android:autofillHints="password"
         android:drawableStart="@drawable/user_lock"
         android:hint="@string/mot_de_passe"
         android:inputType="textPassword"
         android:textColorHint="@color/gray"
+        app:layout_constraintTop_toBottomOf="@+id/birth"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="20dp"
-        tools:layout_editor_absoluteY="407dp" />
+        tools:layout_editor_absoluteX="20dp" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/birth"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
         android:drawableStart="@drawable/birth"
         android:hint="@string/birth"
         android:inputType="datetime"
         android:textColorHint="@color/gray"
+        app:layout_constraintTop_toBottomOf="@+id/user"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="24dp"
-        tools:layout_editor_absoluteY="342dp" />
+        tools:layout_editor_absoluteX="20dp" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/mdp2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:autofillHints="password"
         android:drawableStart="@drawable/user_lock"
         android:hint="@string/mdp_conf"
         android:inputType="textPassword"
         android:textColorHint="@color/gray"
+        app:layout_constraintTop_toBottomOf="@+id/mdp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="20dp"
-        tools:layout_editor_absoluteY="473dp" />
+        tools:layout_editor_absoluteX="20dp" />
 
     <Button
         android:id="@+id/inscrire"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:background="@color/dark_blue"
         android:text="@string/inscrire"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/connecter"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="20dp"
-        tools:layout_editor_absoluteY="647dp" />
+        tools:layout_editor_absoluteX="20dp" />
 
     <Button
         android:id="@+id/connecter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
         android:background="@color/dark_blue"
         android:text="@string/connecter"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/mdp2"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="20dp"
-        tools:layout_editor_absoluteY="576dp" />
+        tools:layout_editor_absoluteX="20dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
