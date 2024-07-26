@@ -9,10 +9,21 @@
     tools:context=".AccueilActivity">
 
   <include layout="@layout/content_profil" />
-  <View
-      android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      android:id="@+id/vue"/>
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/recyclerView"
+      android:layout_width="409dp"
+      android:layout_height="628dp"
+      android:layout_marginStart="1dp"
+      android:layout_marginEnd="1dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.961" />
+
+
   <!-- Revoir la mise en page de tout les pages XML avec l'emulateur-->
   <!-- Surchager la page avec les donnees stockes dans la base de donnees dans des boxes-->
 

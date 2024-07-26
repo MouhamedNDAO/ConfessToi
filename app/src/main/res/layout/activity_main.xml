@@ -10,15 +10,20 @@
     >
 
     <!-- Revoir la mise en page de tout les pages XML avec l'emulateur-->
+
     <ImageView
         android:id="@+id/img_logo_app"
         android:layout_width="344dp"
         android:layout_height="230dp"
+        android:layout_marginBottom="464dp"
         android:contentDescription="@string/logo_app"
         android:src="@drawable/img"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="26dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
 
     <TextView
         android:id="@+id/StarterText"
@@ -31,40 +36,48 @@
         android:textColor="@color/black"
         android:textSize="37sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.941"
-        app:layout_constraintStart_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@id/img_logo_app"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="116dp"
         android:background="@color/dark_blue"
         android:text="@string/login"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="549dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@id/StarterText"
+       />
 
     <Button
         android:id="@+id/register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
         android:background="@color/dark_blue"
         android:text="@string/register"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="20sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="24dp"
-        tools:layout_editor_absoluteY="625dp"
-        />
-
-
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@id/login"
+        tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
